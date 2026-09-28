@@ -1,0 +1,1 @@
+{"description":"OpenAI-compatible bridge so 9Router can use Muse as a provider","engines":{"node":">=18"},"main":"bridge.js","name":"muse-bridge","scripts":{"start":"node bridge.js"},"version":"1.0.0"}

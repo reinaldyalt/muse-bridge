@@ -1,0 +1,13 @@
+services:
+  - type: web
+    name: muse-bridge
+    runtime: node
+    plan: free
+    buildCommand: npm install
+    startCommand: node bridge.js
+    healthCheckPath: /health
+    envVars:
+      # Nilai token diisi manual di dashboard Render (Environment),
+      # JANGAN tulis token di file ini karena repo bersifat publik.
+      - key: BRIDGE_TOKEN
+        sync: false
